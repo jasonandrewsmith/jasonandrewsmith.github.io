@@ -526,13 +526,13 @@ button:hover {
 
 }
 
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 550px) {
     #icon-menu {
         display: none;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 350px)  and (max-width: 550px) {
     .menu {
         display: inherit;
     }
