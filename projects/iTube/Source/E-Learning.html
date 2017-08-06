@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		
+		<!--The main styling sheet for the site-->
+		<link rel="stylesheet" href="css/main.css">
+		<!--
+			The source of the various icons I use 
+			"Font Awesome by Dave Gandy - http://fontawesome.io"
+			License: MIT License 
+			URL: http://opensource.org/licenses/mit-license.html
+			these are the <i>fa fa-* classes
+		-->
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<!--Bootstrap css-->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		
+		<!--jQuery-->
+		<script src="js/jquery.js"></script>
+		<!--Bootstrap javascript-->		
+		<script src="js/bootstrap.min.js"></script>	
+		<!--
+			Scripts I use to control what shows up on the page.
+			open each file to see details on what they do
+		-->	
+		<script type="text/javascript" src="js/slideMenu.js"></script>
+		<script type="text/javascript" src="js/videoSwitch.js"></script>
+		<script type="text/javascript" src="js/galleryLoader.js"></script>
+		<script type="text/javascript" src="js/scroller.js"></script>
+		
+		<title>E-Learning</title>
+	</head>
+	<!--
+		The body of each video page MUST have an id that matches the name of the folder where
+		its respective videos are located. This is due to how galleryLoader.js is written.
+	-->
+	<body id="E-Learning">
+		<div class= "container">
+			<!--This is the nav bar across the top-->
+	        <ul class="top">
+	            <li id="icon-menu"><i class="fa fa-bars"></i> Menu</li>
+	            <li id="home"><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">  Home</a></li>
+	        </ul>
+	        <!--This is everything not in the nav bar-->
+	        <div id="mid">
+	        	<!--This is the pop out side menu-->
+	        	<div class="menu">
+		            <ul>
+		                <li><a href="E-Learning.html">E-Learning</a></li>
+		                <li><a href="HVCA.html">High Voltage CA</a></li>
+		                <li><a href="LVCA.html">Low Voltage CA</a></li>
+		                <li><a href="EPOX.html">Epox</a></li>
+		                <li><a href="SG.html">Switchgear</a></li>
+		                <li><a href="MAINT.html">Maintenence</a></li>
+		                <li><a href="MISC.html">Misc.</a></li>
+		            </ul>
+		        </div><!--.menu end-->
+		        
+<!--Content goes under this line------------------------------------------------------------------------>		        
+		        <!--This is the big page title and the big video player-->
+		        <h1 id="pageName">E-Learning</h1>
+		        <div class="jumbotron">
+		            <video id ="main_video" width="100%" height="100%" controls preload='auto'>
+						<source id="src1" src="../videos/example.mp4"  />
+					</video>
+					<h4 id="vidName">Select a category or a video</h4>
+				</div> <!--.jumbotron end-->
+				<!--These are the the categories to choose from-->
+				<div id="categories"class="container">
+					<h4>Categories:</h4>
+				  	<div class="row">
+				  	</div><!--.row end-->
+<!--Under this line is where all sub categories go. They will each have 4 classes--------------------->
+				  	<div class="row hiddenRow default extra">
+				    	<div class="col-sm-2">
+				      		<div id="" class="playlist back">
+					      		<i class="fa fa fa-arrow-left fa-5x" aria-hidden="true"></i> 
+								<h5>Back</h5>		
+							</div>
+				    	</div>
+					</div><!--.row end-->
+				</div><!--#categories end-->
+				<hr><!--divider-->
+				<!--The videos get populated in here-->
+				<div id="gallery" class="container">
+				  	<h4>Videos:</h4>
+					<div class="row">
+						<div class="col-sm-3">
+						  		<img id="vid1" height="100%" width="100%"
+						  			class="sml_video" src="../thumbs/E-Learning Promotional.PNG" 
+						  			vidSrc="../videos/E-Learning/E-Learning Promo Video.mp4" 
+						  			title="E-Learning Promotional Video (2:23)">
+								<h5>E-Learning Promotional Video</h5>	
+						</div>
+					</div><!-- row end -->
+				</div><!--#gallery end-->				     
+		    </div><!--#mid end-->
+	    </div><!--container end-->
+	</body>
+</html>

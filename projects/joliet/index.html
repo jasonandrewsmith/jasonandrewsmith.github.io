@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Lato" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+		<meta charset="UTF-8" />
+		<title>City of Joliet, IL</title>
+	</head>
+	<body>
+        <div class="nav-bar align-in-page">
+			<div class="logo-holder right-border">
+				<img class="logo" src=pictures/logo.png >
+			</div>
+			<span id="icon-menu"><i class="fa fa-bars"></i> Menu</span>
+			<div class="menu">
+
+				<ul>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Residents</a></li>
+					<li><a href="#">Visitors</a></li>
+					<li><a href="#">Business</a></li>
+					<li><a href="#">Government</a></li>
+					<div class="search">
+						<form class="form-style" action="" method="get">
+							<span class="icon"><i class="fa fa-search"></i></span>
+							<input id="search" type="search" placeholder="Search...">
+						</form>
+				  	</div>
+				</ul>
+			</div>
+			<ul class="tabs">
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Residents</a></li>
+				<li><a href="#">Visitors</a></li>
+				<li><a href="#">Business</a></li>
+				<li><a href="#">Government</a></li>
+			</ul>
+		  	<div class="search initial">
+				<form class="form-style" action="" method="get">
+					<span class="icon"><i class="fa fa-search"></i></span>
+					<input id="search" type="search" placeholder="Search...">
+				</form>
+		  	</div>
+		</div>
+
+		<div class="container">
+			<div class="welcome-area">
+				<h1 class="welcome welcome-header">The City of Excitement</h1>
+				<p class="welcome welcome-par">
+					When we say Joliet is the City of Excitement, we really mean it! Where else can you find so many great attractions?
+				</p>
+			</div>
+			<div class="carousel">
+				<div class="car-next">
+					<button class = "carousel-btn arrow" onclick="prev()">&#9667;</button>
+					<button class = "carousel-btn arrow" onclick="next()">&#9657;</button>
+				</div>
+				<div class="car-nav-flex">
+					<button class = "carousel-btn" onclick="goTo(0)">&#9675;</button>
+					<button class = "carousel-btn" onclick="goTo(1)">&#9675;</button>
+					<button class = "carousel-btn" onclick="goTo(2)">&#9675;</button>
+					<button class = "carousel-btn" onclick="goTo(3)">&#9675;</button>
+				</div>
+				<ul class="items">
+					<li class="item"><img class="main-image" src="pictures/carousel-1.jpg"></li>
+					<li class="item"><img class="main-image" src="pictures/carousel-2.jpg"></li>
+					<li class="item"><img class="main-image" src="pictures/carousel-3.jpg"></li>
+					<li class="item"><img class="main-image" src="pictures/carousel-4.jpg"></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="circle-bar">
+			<div class="flex-circle-bar">
+				<div class="circle-item-wrapper">
+					<div class="circle-item">
+						<i class="fa fa-money fa-4x" aria-hidden="true"></i>
+					</div>
+					<h3 class="circle-text">Pay Online</h3>
+				</div>
+				<div class="circle-item-wrapper">
+					<div class="circle-item">
+						<i class="fa fa-briefcase fa-4x" aria-hidden="true"></i>
+					</div>
+					<h3 class="circle-text">Employment</h3>
+				</div>
+				<div class="circle-item-wrapper">
+					<div class="circle-item">
+						<i class="fa fa-list-alt fa-4x" aria-hidden="true"></i>
+					</div>
+					<h3 class="circle-text">Meetings and Agendas</h3>
+				</div>
+				<div class="circle-item-wrapper">
+					<div class="circle-item">
+						<i class="fa fa-trash fa-4x" aria-hidden="true"></i>
+					</div>
+					<h3 class="circle-text">Garbage and Recycling</h3>
+				</div>
+				<div class="circle-item-wrapper">
+					<div class="circle-item">
+						<i class="fa fa-wrench fa-4x" aria-hidden="true"></i>
+					</div>
+					<h3 class="circle-text">Service Requests</h3>
+				</div>
+				<div class="circle-item-wrapper">
+					<div class="circle-item">
+						<i class="fa fa-pencil-square-o fa-4x" aria-hidden="true"></i>
+					</div>
+					<h3 class="circle-text">Permits and Forms</h3>
+				</div>
+			</div>
+		</div>
+
+		<div class="wrapper">
+			<div class="cal-news-area">
+
+				<h1 class="cal-header">Calendar</h1>
+				<div class="calendar">
+					<div class="cal-item">
+						<div class="date">
+							<h1 class="month">Jul</h1>
+							<h1 class="day">15</h1>
+						</div>
+						<div class="cal-info">
+							<h1 class="cal-title">Some meeting for something</h1>
+							<h1 class="cal-time">12:00PM</h1>
+						</div>
+					</div>
+					<div class="cal-item">
+						<div class="date">
+							<h1 class="month">Jul</h1>
+							<h1 class="day">16</h1>
+						</div>
+						<div class="cal-info">
+							<h1 class="cal-title">Some meeting for something</h1>
+							<h1 class="cal-time">12:00PM</h1>
+						</div>
+					</div>
+					<div class="cal-item">
+						<div class="date">
+							<h1 class="month">Jul</h1>
+							<h1 class="day">17</h1>
+						</div>
+						<div class="cal-info">
+							<h1 class="cal-title">Some meeting for something</h1>
+							<h1 class="cal-time">12:00PM</h1>
+						</div>
+					</div>
+				</div>
+				<h1 class="cal-header">News</h1>
+
+				<div class="news">
+					<div class="news-col news-col-1">
+						<div class="news-item">
+							<h1 class="headline">Headline</h1>
+							<p class="story">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+						</div>
+						<div class="news-item">
+							<h1 class="headline">Headline</h1>
+							<p class="story">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+						</div>
+						<div class="news-item">
+							<h1 class="headline">Headline</h1>
+							<p class="story">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+						</div>
+
+					</div>
+					<div class="news-col news-col-2">
+						<div class="news-item">
+							<h1 class="headline">Headline</h1>
+							<p class="story">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+						</div>
+						<div class="news-item">
+							<h1 class="headline">Headline</h1>
+							<p class="story">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="bottom-info">
+			<div class="bot-info-item address">
+				<i class="fa fa-map-marker fa-4x" aria-hidden="true"></i>
+				<span>150 W. Jefferson Street</span>
+				<span>Joliet, IL 60432</span>
+			</div>
+			<div class="bot-info-item phone-hours">
+				<i class="fa fa-phone fa-4x" aria-hidden="true"></i>
+				<span>Hours: 8:00 a.m. - 4:30 p.m.</span>
+				<span>Monday - Friday</span>
+			</div>
+			<div class="social-btns">
+				<div class="temp">
+					<span>79°F</span>
+				</div>
+				<div class="fb">
+					<i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+				</div>
+				<div class="twitter">
+					<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="foot-tabs">
+				<ul class="tabs">
+					<li>Home</li>
+					<li>Services</li>
+					<li>Residents</li>
+					<li>Visitors</li>
+					<li>Business</li>
+					<li>Government</li>
+					<li>FOIA Requests</li>
+					<li>Bids &amp; RFPs</li>
+					<li>Gateway Center</li>
+					<li>Municipal Codes</li>
+					<li>Translate</li>
+				</ul>
+			</div>
+			<span>Created by Jason Andrew Smith</span>
+		</div>
+		<script
+  src="http://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/menuSlider.js"></script>
+		<script src="https://use.fontawesome.com/eb56e3f599.js"></script>
+		<script type="text/javascript" src="js/carousel.js"></script>
+	</body>
+</html>

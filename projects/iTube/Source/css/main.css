@@ -1,0 +1,217 @@
+﻿html,body {
+    left: 0;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    position: relative;
+    background: #fff;
+    display: block;
+}
+
+.container{
+    display: block;
+    margin:0px;
+    height: 100%;
+}
+/*This is the bar across the top of the screen*/
+.top { 
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    list-style: none;
+    width: 100%;
+    height: 45px;
+    vertical-align: middle;
+	border-bottom-style: solid;
+    border-bottom-color: #d9d9d9;
+    border-bottom-width: 1px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: white;
+	display:flex; /*This makes the menu and home buttons don't have space between them*/
+	z-index: 5;
+}
+
+/*This is the menu button*/
+#icon-menu {
+	border-right-style: solid;
+    border-right-color: #d9d9d9;
+    border-right-width: 1px;
+    width: 250px;
+    height:100%;
+    cursor: pointer;
+    padding-left: 22px;
+	line-height: 45px;
+	display: inline-block;
+}
+
+#icon-menu:hover {
+	color: #fff;
+	background: #66a3ff;
+	line-height: 45px;
+    cursor: pointer;
+}
+
+/*This is the home button*/
+#home {
+	border-right-style: solid;
+    border-right-color: #d9d9d9;
+    border-right-width: 1px;
+    width: 250px;
+    height:100%;
+    cursor: pointer;
+    padding-left: 22px;
+	line-height: 50px;
+    display: inline-block;
+}
+
+#home a {
+	text-decoration: none;
+	color: #000;
+}
+
+#home:hover {
+	color: #fff;
+	background: #66a3ff;
+	line-height: 45px;
+
+
+    cursor: pointer;
+    padding-left: 22px;
+    margin-left: 0px;
+	line-height: 50px;
+    display: inline-block;
+}
+
+#home:hover > a {
+	color:#fff;
+}
+
+/*This is everything not in the .top div*/
+#mid {
+	margin-top:45px;
+	height: 100%;
+}
+
+/*This is the div where the slide out menu is*/
+.menu {
+    left: -250px;
+    margin-top: 0px;
+    height: 90%;
+    position: fixed;
+    width: 250px;
+    overflow-y: scroll;
+    background: white;
+    float: left;
+    z-index: 5;
+}
+
+/*This is the actual menu*/
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*this is the styling for each of the list element spaces*/
+.menu li {
+    border-bottom: 1px solid #d9d9d9;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 45px;
+    padding-bottom: 3px;
+    padding-left: 25px;
+    padding-top: 3px;
+    list-style: none;
+    margin-top: 0px;
+}
+
+.menu li:hover{
+	background: #66a3ff;
+	cursor:pointer;
+}
+
+/*This is the actual text in the menu*/
+.menu a {
+    color: #000;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+
+.menu li:hover > a{
+	color: #fff;
+}
+
+/*This is the title across the top of the video pages*/
+#pageName {
+	padding-top: 10px;
+}
+
+/*This is the gray box in the middle of the screen*/
+.jumbotron{
+	text-align: center;
+}
+
+#main_video{
+	max-width:864px;
+    max-height:486px;
+	object-fit:contain;
+}
+
+/*This is for the category buttons*/
+.playlist {
+	border: 1px solid #fff;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.playlist:hover {
+	border: 1px solid #66a3ff;
+	cursor: pointer;
+}
+
+/*These are the video thumbnails on the bottom of the video*/
+.sml_video {
+	border: 3px solid #fff;
+}
+
+.sml_video:hover {
+	border: 3px solid #66a3ff;
+	cursor:pointer;
+}
+
+/*Theis for hiding the category rows*/
+.visibleRow{
+	display: block;
+}
+
+.hiddenRow{
+	display:none;
+}
+
+.welcomeScrn{
+	opacity: 0.88;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
