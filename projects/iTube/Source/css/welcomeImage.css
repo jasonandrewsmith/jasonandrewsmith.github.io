@@ -1,6 +1,6 @@
 ﻿/*This is only for the index page's backround image*/
 html,#welcomePic {
-	background-image: url("../welcomeScreen.png");
+	background-image: url("../welcomeScreen.PNG");
 	background-repeat: no-repeat;
 	background-position: center top;
 	overflow-y: auto;
