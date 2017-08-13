@@ -81,7 +81,8 @@ footer{
     color: #494848;
     background: #e3e1e1;
     margin-top: 45px;
-    height: 10vh;
+    height: 100px;
+    text-align: center;
 }
 
 footer p {
